@@ -1,0 +1,13 @@
+{
+  "source": ["out/dodo.json"],
+  "platforms": {
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "out/",
+      "files": [{
+        "destination": "dodo.ts",
+        "format": "javascript/es6"
+      }]
+    }
+  }
+}

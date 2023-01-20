@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"declaration": true,
+		"target": "es2018",
+		"moduleResolution": "node",
+		"strict": true,
+		"module": "ESNext",
+
+		"baseUrl": "out",
+	},
+	"include": ["**/*.ts"]
+}

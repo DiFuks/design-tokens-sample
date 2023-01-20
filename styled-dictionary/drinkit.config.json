@@ -1,0 +1,13 @@
+{
+  "source": ["out/drinkit.json"],
+  "platforms": {
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "out/",
+      "files": [{
+        "destination": "drinkit.ts",
+        "format": "javascript/es6"
+      }]
+    }
+  }
+}
