@@ -2,14 +2,18 @@
 
 ## Настройка
 
-- Настроить интеграцию с Tokens Studio https://docs.tokens.studio/sync/github 
+- Настроить интеграцию с [Tokens Studio](https://docs.tokens.studio/sync/github). Токены должны сохраняться в файл tokens.json
 - Для билда использовать
 ```bash
 yarn transform:dodo \
 yarn transform:drinkit \
 yarn build
 ```
+- Поднять версию
 - Опубликовать пакет
+
+
+В github action ([publish.yml](.github%2Fworkflows%2Fpublish.yml)) находится полный пример деплоя
 
 ## Использование
 
@@ -142,4 +146,12 @@ export const Theme: FC<IProps> = ({ children }) => {
     </ThemeProvider>
   );
 };
+```
+
+```tsx
+// SomeComponent.tsx
+
+export const CardStyled = styled.article`
+	background-color: ${getColor(`bg-card`)};
+`;
 ```
