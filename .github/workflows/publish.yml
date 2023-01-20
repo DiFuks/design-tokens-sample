@@ -34,6 +34,9 @@ jobs:
       - name: Update version
         run: yarn version minor
 
+      - name: Release package
+        run: yarn npm publish
+
       - name: Commit new versions
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -41,9 +44,6 @@ jobs:
             ci: Release package
 
             [skip ci]
-
-      - name: Release package
-        run: yarn npm publish
 
   notifications:
     name: Notifications
